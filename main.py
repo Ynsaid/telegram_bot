@@ -12,7 +12,7 @@ Token = os.getenv("BOT_TOKEN")
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton("Hello", callback_data="say_hello")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await update.message.reply_text("Click the button below 👇", reply_markup=reply_markup)
+    await update.message.reply_text("Click the button below test 👇", reply_markup=reply_markup)
 
 # Handle button click
 async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
